@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -22,12 +23,11 @@
     <div class="container">
         <ul class="optionList">
             <li>Salir</li>
-            <li>Consultar viajes desde origen</li>
-            <li>Reservar un viaje</li>
-            <li>Anular una reserva de viaje</li>
-            <li>Ofrecer un nuevo viaje</li>
-            <li>Eliminar uno de mis viajes</li>
-            <li><a href="buscador.html">Buscador</a></li>
+            <li><a href="consultaViajes.jsp">Consultar viajes desde origen</a></li>
+            <li><a href="reservaViajes.jsp">Reservar un viaje</a></li>
+            <li><a href="anularViajes.jsp">Anular una reserva de viaje</a></li>
+            <li><a href="nuevoViaje.jsp">Ofrecer un nuevo viaje</a></li>
+            <li><a href="eliminarViaje.jsp">Eliminar uno de mis viajes</a></li>
         </ul>
     </div>
 </div>

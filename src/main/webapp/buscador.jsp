@@ -17,7 +17,7 @@
 </h1>
 
 <div class="cuerpo">
-    <form action="buscador.html" method="get">
+    <form action="buscador.jsp" method="get">
         <table class ="tabla">
             <tr>
                 <th>Cuenta:</th>
