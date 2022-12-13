@@ -1,0 +1,52 @@
+body {
+    background: aliceblue;
+}
+
+img{
+    margin-left:auto;
+    margin-right: auto;
+    width:80%;
+    height:80%;
+    display: block;
+}
+
+b{
+    font-size:30px;
+}
+
+div.encabezado{
+    width: auto;
+    height: auto;
+}
+
+div.titulo{
+    text-align: center;
+    color:darkblue;
+    font-size: 60px;
+}
+
+div.cuerpo{ /* Controla el cuerpo de las paginas*/
+    font-family: Arial, serif ;
+    text-align: center;
+
+}
+
+ul.optionList{
+    display: inline-block;
+    text-align: left;
+    color:black;
+    font-size: 20px;
+}
+
+table.tabla {
+    text-align: left;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th {
+    background-color: #8eee98;
+}
+
+
+

@@ -2,16 +2,14 @@ package es.uji.proyectoservlets.modelo;
 
 import org.json.simple.JSONObject;
 
-import java.io.Serial;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Vector;
 
-public class Viaje implements Serializable {
+public class Viaje{
 
-    @Serial
-    private static final long serialVersionUID = 1L;
 
     /**
      * Clase Viaje ofertado
