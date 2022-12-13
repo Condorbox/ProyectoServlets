@@ -13,7 +13,7 @@
 <body>
 <h1>Página de bienvenida en <%= request.getAttribute("ruta")%></h1>
 <p> Bienvenido <%= request.getParameter("nombre")%>
-    <%=request.getParameter("apellido")%>
+    <%=request.getParameter("apellidos")%>
 </p>
 </body>
 </html>

@@ -7,7 +7,7 @@
 <body>
 <h1> Servlet de Bienvenida</h1>
 <br/>
-<form action="ServletDeBienvenida" method="POST">
+<form action="ServletDeBienvenida" method="GET">
     <table>
         <tr><th>Nombre: </th> <td> <input type="text" name="nombre"> </td></tr>
         <tr><th>Apellidos: </th> <td> <input type="text" name="apellidos"> </td></tr>
