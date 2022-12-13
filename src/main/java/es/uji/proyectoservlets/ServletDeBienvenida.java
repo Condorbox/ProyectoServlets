@@ -17,9 +17,8 @@ public class ServletDeBienvenida extends HttpServlet {
         ServletContext context = getServletContext();
         context.setAttribute("gestor", gestorViajes);
 
-        String nombre = request.getParameter("nombre").toString();
-        String apellidos = request.getParameter("apellidos").toString();
-        System.out.println("[LOG] Llamada de doPost con " + nombre + "" + apellidos);
+        HttpSession session = request.getSession(true);
+        session.setAttribute("codcli", request.getParameter("codcli"));
 
         request.setAttribute("ruta", request.getContextPath());
         RequestDispatcher vista = request.getRequestDispatcher("main.jsp");
