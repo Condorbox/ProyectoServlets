@@ -9,7 +9,7 @@
 <body>
 <h1>
     <div class="encabezado">
-        <h1> <img src="Formularios/header.jpg" alt="Coche"> </h1>
+        <h1> <img src="header.jpg" alt="Coche"> </h1>
     </div>
 
     <div class="titulo">
@@ -23,11 +23,11 @@
     <div class="container">
         <ul class="optionList">
             <li>Salir</li>
-            <li><a href="Formularios/consultaViajes.html">Consultar viajes desde origen</a></li>
-            <li><a href="Formularios/reservaViajes.html">Reservar un viaje</a></li>
-            <li><a href="Formularios/anularViajes.html">Anular una reserva de viaje</a></li>
-            <li><a href="Formularios/nuevoViaje.html">Ofrecer un nuevo viaje</a></li>
-            <li><a href="Formularios/eliminarViaje.html">Eliminar uno de mis viajes</a></li>
+            <li><a href="consultaViajes.html">Consultar viajes desde origen</a></li>
+            <li><a href="reservaViajes.html">Reservar un viaje</a></li>
+            <li><a href="anularViajes.html">Anular una reserva de viaje</a></li>
+            <li><a href="nuevoViaje.html">Ofrecer un nuevo viaje</a></li>
+            <li><a href="eliminarViaje.html">Eliminar uno de mis viajes</a></li>
         </ul>
     </div>
 </div>

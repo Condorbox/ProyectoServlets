@@ -27,5 +27,6 @@ public class ServletAnulaViajes extends HttpServlet {
         JSONObject res = gestor.anulaReserva(codviaje, codcli);
         request.setAttribute("resultado", res);
         RequestDispatcher vista = request.getRequestDispatcher("anula.jsp");
+        vista.forward(request, response);
     }
 }

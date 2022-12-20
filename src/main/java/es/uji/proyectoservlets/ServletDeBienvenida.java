@@ -20,7 +20,6 @@ public class ServletDeBienvenida extends HttpServlet {
         HttpSession session = request.getSession(true);
         session.setAttribute("codcli", request.getParameter("codcli"));
 
-        request.setAttribute("ruta", request.getContextPath());
         RequestDispatcher vista = request.getRequestDispatcher("main.jsp");
         vista.forward(request,response);
     }

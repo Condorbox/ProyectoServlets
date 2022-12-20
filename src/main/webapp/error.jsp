@@ -4,6 +4,6 @@
     <title>Error codcli</title>
 </head>
 <body>
-<h1>A ocurrido un error por favor inicie sesión de nuevo <br><a>href="index.jsp"</a> Inicio Sesión</h1>
+<h1>A ocurrido un error por favor inicie sesión de nuevo <br><a href="index.jsp">Inicia Sesión</a></h1>
 </body>
 </html>
