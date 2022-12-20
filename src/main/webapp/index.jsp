@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>BlaBlaUJI</title>
 </head>
 <body>
     <h1>
         <div class="encabezado">
-            <h1> <img src="header.jpg" alt="Coche"> </h1>
+            <h1> <img src="Formularios/header.jpg" alt="Coche"> </h1>
         </div>
 
         <div class="titulo">

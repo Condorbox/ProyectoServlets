@@ -4,6 +4,7 @@ import es.uji.proyectoservlets.modelo.GestorViajes;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
+import org.json.simple.JSONArray;
 
 import java.io.IOException;
 
@@ -20,5 +21,10 @@ public class ServletConsultaViajes extends HttpServlet {
             vistaError.forward(request, response);
             return;
         }
+
+        String origen = request.getParameter("origen");
+        JSONArray res = gestor.consultaViajes(origen);
+        request.setAttribute("resultado", res);
+        RequestDispatcher vista = request.getRequestDispatcher("consulta.jsp");
     }
 }
