@@ -17,7 +17,7 @@
     </h1>
     <div class="cuerpo">
         <form action="ServletDeBienvenida" method="GET">
-            <label> Código de cliente: </label> <input type="text" name="codcli" required> <br>
+            <label for="codcli"> Código de cliente: </label> <input type="text" id="codcli" name="codcli" required> <br>
             <br><input type="submit" value="Acceder">
         </form>
     </div>
