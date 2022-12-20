@@ -17,7 +17,9 @@ public class ServletReservaViajes extends HttpServlet {
         GestorViajes gestor = (GestorViajes) context.getAttribute("gestor");
         HttpSession session = request.getSession(false);
         if (session == null) {
-            //TODO redirigir página de error
+            RequestDispatcher vistaError = request.getRequestDispatcher("error.jsp");
+            vistaError.forward(request, response);
+            return;
         }
 
         String codcli = session.getAttribute("codcli").toString();
