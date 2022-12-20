@@ -26,6 +26,7 @@ public class ServletBorrarViajes extends HttpServlet {
         String codviaje = request.getParameter("codviaje");
         JSONObject res = gestor.borraViaje(codviaje, codcli);
         request.setAttribute("resultado", res);
-        RequestDispatcher vista = request.getRequestDispatcher("borra.jsp");
+        RequestDispatcher vista = request.getRequestDispatcher("borrar.jsp");
+        vista.forward(request, response);
     }
 }
