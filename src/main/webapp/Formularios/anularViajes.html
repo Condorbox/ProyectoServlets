@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <meta charset="UTF-8">
   <title>BlaBlaUJI-Reserva Viajes</title>
 </head>
@@ -12,16 +12,16 @@
   </div>
 
   <div class="titulo">
-    <h2> Formulario de retirada de oferta de viaje </h2>
+    <h2> Formulario de anulación de viaje </h2>
   </div>
 </h1>
 
 <div class="cuerpo">
-  <form action="ServletBorrarViajes" method="POST">
-    <label>Código del viaje que quieres retirar: </label>
+  <form action="ServletAnulaViajes" method="POST">
+    <label>Código del viaje que quieres anular: </label>
     <input type="text" id="codviajes" name="codviajes" maxlength="40" size="40" required>
     <br><br>
-    <input type = "submit" name = "submit" value = "Borrar"/>
+    <input type = "submit" name = "submit" value = "Anular"/>
   </form>
 </div>
 </body>
