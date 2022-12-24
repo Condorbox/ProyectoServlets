@@ -1,20 +1,24 @@
-<%@ page import="org.json.simple.JSONObject" %>
+<%@ page import="org.json.simple.JSONObject" %><%--
+  Created by IntelliJ IDEA.
+  User: jonik
+  Date: 24/12/2022
+  Time: 0:56
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <title>Oferta Viajes</title>
+    <title>Reserva- Viajes</title>
 </head>
 <body>
 <%
   JSONObject res = (JSONObject) request.getAttribute("resultado");
 
   if (res.isEmpty()){%>
-<h1> Lo sentimos, no se ha podido efectuar correctamente</h1>
+<h1> Lo sentimos, no se ha podido efectuar correctamente la reserva.</h1>
 <%} else{%>
 
-<h1>Enhorabuena. Tu propuesta de viaje ha sido aceptada.</h1>
+<h1>Enhorabuena. Tu reserva de viaje ha sido aceptada.</h1>
 <br>
 <h1>El viaje tiene el siguiente estado:</h1>
 <br>
