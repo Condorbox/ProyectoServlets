@@ -1,14 +1,10 @@
-<%@ page import="org.json.simple.JSONObject" %><%--
-  Created by IntelliJ IDEA.
-  User: jonik
-  Date: 24/12/2022
-  Time: 0:56
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="org.json.simple.JSONObject" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Oferta Viajes</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Oferta Viajes</title>
 </head>
 <body>
 <%

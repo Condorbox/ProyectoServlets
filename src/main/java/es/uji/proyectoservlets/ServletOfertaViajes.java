@@ -22,14 +22,14 @@ public class ServletOfertaViajes extends HttpServlet {
             return;
         }
 
-        String codcli = request.getParameter("codcli");
+        String codcli = session.getAttribute("codcli").toString();
         String origen = request.getParameter("origen");
         String destino = request.getParameter("destino");
-        String fecha = request.getParameter("fecha");
-        long numplazas = Long.parseLong(request.getParameter("numplazas"));
+        String fecha = request.getParameter("date");
+        long numPlazas = Long.parseLong(request.getParameter("numPlazas"));
         long precio = Long.parseLong(request.getParameter("precio"));
-
-        JSONObject viajeOfertado =  gestor.ofertaViaje(codcli,origen,destino,fecha,precio,numplazas);
+        JSONObject viajeOfertado =  gestor.ofertaViaje(codcli,origen,destino,fecha,precio,numPlazas);
+        System.out.println("Fecha -> " + fecha);
         request.setAttribute("resultado",viajeOfertado);
         RequestDispatcher vista = request.getRequestDispatcher("oferta.jsp");
         vista.forward(request,response);

@@ -1,6 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
     <title>Error codcli</title>
 </head>
 <body>

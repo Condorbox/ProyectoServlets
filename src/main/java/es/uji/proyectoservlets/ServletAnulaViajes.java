@@ -12,7 +12,7 @@ import java.io.IOException;
 public class ServletAnulaViajes extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
+        response.setContentType("text/html;charset=UTF-8");
         ServletContext context = getServletContext();
         GestorViajes gestor = (GestorViajes) context.getAttribute("gestor");
         HttpSession session = request.getSession(false);
