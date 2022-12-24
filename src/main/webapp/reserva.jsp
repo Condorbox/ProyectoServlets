@@ -8,17 +8,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Oferta Viajes</title>
+    <title>Reserva- Viajes</title>
 </head>
 <body>
 <%
   JSONObject res = (JSONObject) request.getAttribute("resultado");
 
   if (res.isEmpty()){%>
-<h1> Lo sentimos, no se ha podido efectuar correctamente</h1>
+<h1> Lo sentimos, no se ha podido efectuar correctamente la reserva.</h1>
 <%} else{%>
 
-<h1>Enhorabuena. Tu propuesta de viaje ha sido aceptada.</h1>
+<h1>Enhorabuena. Tu reserva de viaje ha sido aceptada.</h1>
 <br>
 <h1>El viaje tiene el siguiente estado:</h1>
 <br>

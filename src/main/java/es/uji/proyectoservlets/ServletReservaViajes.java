@@ -11,7 +11,7 @@ import java.io.IOException;
 @WebServlet(name = "ServletReservaViajes", value = "/ServletReservaViajes")
 public class ServletReservaViajes extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         ServletContext context = getServletContext();
         GestorViajes gestor = (GestorViajes) context.getAttribute("gestor");
