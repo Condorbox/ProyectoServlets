@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.*;
 import org.json.simple.JSONObject;
 
 import java.io.IOException;
+import java.util.Date;
 
 @WebServlet(name = "ServletOfertaViajes", value = "/ServletOfertaViajes")
 public class ServletOfertaViajes extends HttpServlet {
@@ -28,8 +29,16 @@ public class ServletOfertaViajes extends HttpServlet {
         String fecha = request.getParameter("date");
         long numPlazas = Long.parseLong(request.getParameter("numPlazas"));
         long precio = Long.parseLong(request.getParameter("precio"));
-        JSONObject viajeOfertado =  gestor.ofertaViaje(codcli,origen,destino,fecha,precio,numPlazas);
+
+        //SOLUCION CUTRE PERO QUE FUNCIONA - RECORDAR FECHAS POSTERIORES A LA ACTUAL -
         System.out.println("Fecha -> " + fecha);
+        String[] fechaNotFormated = fecha.split("-");
+        fecha = fechaNotFormated[2] + "-" + fechaNotFormated[1] + "-" + fechaNotFormated[0];
+        System.out.println("Fecha -> " + fecha);
+        //
+
+        JSONObject viajeOfertado =  gestor.ofertaViaje(codcli,origen,destino,fecha,precio,numPlazas);
+        System.out.println("VIAJE OFERTADO: " + viajeOfertado.toString());
         request.setAttribute("resultado",viajeOfertado);
         RequestDispatcher vista = request.getRequestDispatcher("oferta.jsp");
         vista.forward(request,response);
