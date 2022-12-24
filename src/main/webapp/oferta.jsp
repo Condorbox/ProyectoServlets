@@ -19,7 +19,7 @@
 <h1>El viaje tiene el siguiente estado:</h1>
 <br>
 <ul class="optionList">
-  <li>Código del viaje: <%= res.get("codviaje").toString()%>></li>
+  <li>Código del viaje: <%= res.get("codviaje").toString()%></li>
   <li>Código del propetario: <%=res.get("codprop").toString()%></li>
   <li>Origen: <%=res.get("origen").toString()%></li>
   <li>Destino: <%=res.get("destino").toString()%></li>

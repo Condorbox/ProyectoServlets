@@ -22,12 +22,12 @@
 
     <div class="container">
         <ul class="optionList">
-            <li>Salir</li>
             <li><a href="consultaViajes.html">Consultar viajes desde origen</a></li>
             <li><a href="reservaViajes.html">Reservar un viaje</a></li>
             <li><a href="anularViajes.html">Anular una reserva de viaje</a></li>
             <li><a href="nuevoViaje.html">Ofrecer un nuevo viaje</a></li>
             <li><a href="eliminarViaje.html">Eliminar uno de mis viajes</a></li>
+            <li><a href="salida.html">Salir</a></li>
         </ul>
     </div>
 </div>

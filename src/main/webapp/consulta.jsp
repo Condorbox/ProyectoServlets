@@ -13,7 +13,7 @@
     JSONArray consulta = (JSONArray) request.getAttribute("resultado");
     if (consulta.isEmpty()){%>
 <b> Lo sentimos, no se ha encontrado ningún viaje con dicho origen :c</b>
-    <%} else{%>
+<%} else{%>
 <table>
     <tr>
         <th> Código viaje</th>

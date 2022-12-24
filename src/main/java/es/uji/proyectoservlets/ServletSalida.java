@@ -1,15 +1,19 @@
 package es.uji.proyectoservlets;
 
 import es.uji.proyectoservlets.modelo.GestorViajes;
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
-import org.json.simple.JSONObject;
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet(name = "ServletReservaViajes", value = "/ServletReservaViajes")
-public class ServletReservaViajes extends HttpServlet {
+@WebServlet(name = "ServletSalida", value = "/ServletSalida")
+public class ServletSalida extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -22,11 +26,10 @@ public class ServletReservaViajes extends HttpServlet {
             return;
         }
 
-        String codcli = session.getAttribute("codcli").toString();
-        String codviaje = request.getParameter("codviaje");
-        JSONObject res = gestor.reservaViaje(codviaje, codcli);
-        request.setAttribute("resultado", res);
-        RequestDispatcher vista = request.getRequestDispatcher("reserva.jsp");
+        gestor.guardaDatos();
+        session.removeAttribute("codcli");
+        session.invalidate();
+        RequestDispatcher vista = request.getRequestDispatcher("salida.jsp");
         vista.forward(request, response);
     }
 }

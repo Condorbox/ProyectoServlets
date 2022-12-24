@@ -13,7 +13,7 @@ import java.util.Date;
 public class ServletOfertaViajes extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
+        response.setContentType("text/html;charset=UTF-8");
         ServletContext context = getServletContext();
         GestorViajes gestor = (GestorViajes) context.getAttribute("gestor");
         HttpSession session = request.getSession(false);
