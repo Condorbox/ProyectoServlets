@@ -26,5 +26,6 @@ public class ServletConsultaViajes extends HttpServlet {
         JSONArray res = gestor.consultaViajes(origen);
         request.setAttribute("resultado", res);
         RequestDispatcher vista = request.getRequestDispatcher("consulta.jsp");
+        vista.forward(request,response);
     }
 }

@@ -22,5 +22,6 @@
         <li>Plazas disponibles: <%=res.get("numplazas").toString()%></li>
     </ul>
 <% } %>
+<h3><a href="main.jsp">Menú</a></h3>
 </body>
 </html>
