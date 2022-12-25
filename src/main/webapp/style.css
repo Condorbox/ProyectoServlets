@@ -47,6 +47,10 @@ table.tabla {
 th {
     background-color: #8eee98;
 }
+td.contenido{
+    background-color: #e4ffe7;
+    text-align: center;
+}
 
 
 

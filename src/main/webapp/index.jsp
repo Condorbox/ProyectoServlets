@@ -12,7 +12,7 @@
         </div>
 
         <div class="titulo">
-            <h2> Por un planeta ... </h2>
+            <h2> Por un planeta mejor ... </h2>
         </div>
     </h1>
     <div class="cuerpo">
