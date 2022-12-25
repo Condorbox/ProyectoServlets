@@ -27,13 +27,15 @@
         </tr>
         <% for(Object elem : consulta){
             Viaje viaje = (Viaje) elem;%>
-        <th><%= viaje.getCodviaje()%></th>
-        <th><%= viaje.getCodprop()%></th>
-        <th><%= viaje.getDestino()%></th>
-        <th><%= viaje.getFecha()%></th>
-        <th><%= viaje.getPrecio()%></th>
-        <th><%= viaje.getNumplazas()%></th>
-        <th><%= viaje.getPasajeros()%></th>
+        <tr>
+            <th><%= viaje.getCodviaje()%></th>
+            <th><%= viaje.getCodprop()%></th>
+            <th><%= viaje.getDestino()%></th>
+            <th><%= viaje.getFecha()%></th>
+            <th><%= viaje.getPrecio()%></th>
+            <th><%= viaje.getNumplazas()%></th>
+            <th><%= viaje.getPasajeros()%></th>
+        </tr>
         <% }%>
     </table>
     <%}%>
