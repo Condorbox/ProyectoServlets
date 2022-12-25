@@ -15,7 +15,7 @@
         if (consulta.isEmpty()){%>
     <b> Lo sentimos, no se ha encontrado ningún viaje con dicho origen :c</b>
     <%} else{%>
-    <table>
+    <table class="tabla">
         <tr>
             <th> Código viaje</th>
             <th> Código propietario</th>
