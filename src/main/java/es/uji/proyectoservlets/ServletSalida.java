@@ -21,6 +21,7 @@ public class ServletSalida extends HttpServlet {
         GestorViajes gestor = (GestorViajes) context.getAttribute("gestor");
         HttpSession session = request.getSession(false);
         if (session == null) {
+            System.out.println("Session -> MANUAL_NULL");
             RequestDispatcher vistaError = request.getRequestDispatcher("error.jsp");
             vistaError.forward(request, response);
             return;

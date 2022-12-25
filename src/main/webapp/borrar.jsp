@@ -7,10 +7,11 @@
     <title>Borrar Viaje</title>
 </head>
 <body>
-<% JSONObject res = (JSONObject) request.getAttribute("resultado");
-   if (res.isEmpty()) { %>
+<div class="cuerpo">
+    <% JSONObject res = (JSONObject) request.getAttribute("resultado");
+        if (res.isEmpty()) { %>
     <h1>Lo lamento, el viaje con código <%=request.getParameter("codviaje")%> no ha podido ser retirado</h1>
-   <% } else { %>
+    <% } else { %>
     <h1> El viaje ha sido borrado con exito</h1>
     <h2>El viaje <%=request.getParameter("codviaje")%>: </h2>
     <ul class="optionList">
@@ -23,7 +24,8 @@
         <li>Precio: <%=res.get("precio").toString()%></li>
         <li>Plazas disponibles: <%=res.get("numplazas").toString()%></li>
     </ul>
-<% } %>
-<h3><a href="main.jsp">Menú</a></h3>
+    <% } %>
+    <h3><a href="main.jsp">Menú</a></h3>
+</div>
 </body>
 </html>

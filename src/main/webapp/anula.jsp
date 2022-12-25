@@ -7,10 +7,11 @@
     <title>Anula reserva</title>
 </head>
 <body>
-<% JSONObject res = (JSONObject) request.getAttribute("resultado");
- if (res.isEmpty()) { %>
-   <h1>Lo sentimos, no se ha podido anular la reserva</h1>
- <%} else {%>
+<div class="cuerpo">
+    <% JSONObject res = (JSONObject) request.getAttribute("resultado");
+        if (res.isEmpty()) { %>
+    <h1>Lo sentimos, no se ha podido anular la reserva</h1>
+    <%} else {%>
     <h1> Tu anulación ha sido aceptada</h1>
     <h2>El viaje <%=request.getParameter("codviaje")%> tiene el siguiente estado: </h2>
     <ul class="optionList">
@@ -23,7 +24,8 @@
         <li>Precio: <%=res.get("precio").toString()%></li>
         <li>Plazas disponibles: <%=res.get("numplazas").toString()%></li>
     </ul>
- <%}%>
-<h3><a href="main.jsp">Menú</a></h3>
+    <%}%>
+    <h3><a href="main.jsp">Menú</a></h3>
+</div>
 </body>
 </html>

@@ -7,8 +7,10 @@
   <title>Salida</title>
 </head>
 <body>
-<h1>Gracias por utilizar nuestros servicios<br>
-Hasta la próxima :D</h1>
-<meta http-equiv="refresh" content="3; URL=index.jsp">
+<div class="cuerpo">
+  <h1>Gracias por utilizar nuestros servicios<br>
+    Hasta la próxima :D</h1>
+  <meta http-equiv="refresh" content="3; URL=index.jsp">
+</div>
 </body>
 </html>
