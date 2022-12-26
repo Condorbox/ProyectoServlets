@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="cuerpo">
-    <h1>A ocurrido un error por favor inicie sesión de nuevo <br>
+    <h1>Ha ocurrido un error por favor inicie sesión de nuevo <br>
         <a href="index.jsp">Inicia Sesión</a></h1>
 </div>
 </body>
